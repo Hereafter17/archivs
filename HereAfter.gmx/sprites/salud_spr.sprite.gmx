@@ -8,18 +8,22 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>255</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>127</bbox_bottom>
+  <bbox_right>107</bbox_right>
+  <bbox_top>1</bbox_top>
+  <bbox_bottom>11</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>256</width>
-  <height>128</height>
+  <width>108</width>
+  <height>13</height>
   <frames>
-    <frame index="0">images\barras_0.png</frame>
+    <frame index="0">images\salud_spr_0.png</frame>
+    <frame index="1">images\salud_spr_1.png</frame>
+    <frame index="2">images\salud_spr_2.png</frame>
+    <frame index="3">images\salud_spr_3.png</frame>
+    <frame index="4">images\salud_spr_4.png</frame>
   </frames>
 </sprite>

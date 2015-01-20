@@ -6,12 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite0</sprite>
     <sprites name="pnj">
       <sprite>sprites\pnj_det</sprite>
       <sprite>sprites\pnj_move</sprite>
     </sprites>
-    <sprite>sprites\barras</sprite>
+    <sprites name="interfaz">
+      <sprites name="dentro del juego">
+        <sprite>sprites\barras_spr</sprite>
+        <sprite>sprites\salud_spr</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\prueba</background>
@@ -27,6 +31,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\inicio</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

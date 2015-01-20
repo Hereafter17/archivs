@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,9 +25,53 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//informacion de todos los recursos del pnj
+            <string>global.nombre = '0';
+
+
+
+
+if global.nombre = '0' {
+global.nombre = get_string('Escribe tu nombre aqui', '') }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+//informacion de todos los recursos del pnj
+if object_exists(menu_info)  {
 draw_set_font(barras_font)
-draw_text
+draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(view_xview+910, view_yview+640, ''+ global.nombre)
+
+}
+
+//dibujar la barra de salud dependiendo la salud
+if (global.salud &gt; 100 &amp;&amp; global.salud &lt; 120) draw_sprite(salud_spr,0, view_xview+870, view_yview+670);
+if salud &gt; 80 &amp;&amp; salud &lt; 100 draw_sprite(salud_spr,1, view_xview+870, view_yview+670);
+if salud &gt; 60 &amp;&amp; salud &lt; 80 draw_sprite(salud_spr,2, view_xview+870, view_yview+670);
+if salud &gt; 40 &amp;&amp; salud &lt; 60 draw_sprite(salud_spr,3, view_xview+870, view_yview+670);
+if salud &gt; 20 &amp;&amp; salud &lt; 40 draw_sprite(salud_spr,4, view_xview+870, view_yview+670);
+if salud &gt; 0  &amp;&amp; salud &lt; 20 draw_sprite(salud_spr,5, view_xview+870, view_yview+670);
+/* la salud es 120 */ 
 </string>
           </argument>
         </arguments>
