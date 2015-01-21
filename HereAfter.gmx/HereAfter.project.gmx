@@ -15,6 +15,9 @@
         <sprite>sprites\barras_spr</sprite>
         <sprite>sprites\salud_spr</sprite>
       </sprites>
+      <sprites name="Titulo">
+        <sprite>sprites\title_spr</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -22,16 +25,18 @@
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
-    <font>fonts\barras_font</font>
+    <font>fonts\barras_name_font</font>
   </fonts>
   <objects name="objects">
     <object>objects\pnj_obj</object>
     <object>objects\menu_info</object>
     <object>objects\info_text</object>
+    <object>objects\salud_obj</object>
+    <object>objects\title_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\inicio</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
