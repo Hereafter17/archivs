@@ -83,6 +83,9 @@
             <kind>1</kind>
             <string>globalvar salud;
 salud= 120;
+
+globalvar dinero;
+dinero=5.75;
 </string>
           </argument>
         </arguments>

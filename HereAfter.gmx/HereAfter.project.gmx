@@ -4,11 +4,19 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="pnj">
-      <sprite>sprites\pnj_det</sprite>
       <sprite>sprites\pnj_move</sprite>
+      <sprite>sprites\pnj_det</sprite>
+      <sprites name="VOLEYBALL">
+        <sprite>sprites\pnj_voley_det</sprite>
+        <sprite>sprites\pnj_voley_salto</sprite>
+        <sprite>sprites\pnj_voley_der</sprite>
+        <sprite>sprites\pnj_voley_izq</sprite>
+      </sprites>
     </sprites>
     <sprites name="interfaz">
       <sprites name="dentro del juego">
@@ -17,6 +25,18 @@
       </sprites>
       <sprites name="Titulo">
         <sprite>sprites\title_spr</sprite>
+      </sprites>
+      <sprites name="estado_personaje">
+        <sprite>sprites\feliz_spr</sprite>
+        <sprite>sprites\triste_spr</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Edificios">
+      <sprites name="De la Plata">
+        <sprites name="Loteria Edif">
+          <sprite>sprites\loteria_spr</sprite>
+          <sprite>sprites\tickets_loteira_spr</sprite>
+        </sprites>
       </sprites>
     </sprites>
   </sprites>
@@ -33,10 +53,16 @@
     <object>objects\info_text</object>
     <object>objects\salud_obj</object>
     <object>objects\title_obj</object>
+    <objects name="Ciudades">
+      <objects name="De la plata">
+        <object>objects\loteria_obj</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Ciudad_de_la_Plata</room>
     <room>rooms\inicio</room>
-    <room>rooms\room0</room>
+    <room>rooms\loteria</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

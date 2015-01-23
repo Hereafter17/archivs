@@ -53,6 +53,7 @@
   <instances>
     <instance objName="pnj_obj" x="416" y="224" name="inst_F1A304D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="menu_info" x="752" y="614" name="inst_0801FC30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="loteria_obj" x="246" y="15" name="inst_D6324AE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
